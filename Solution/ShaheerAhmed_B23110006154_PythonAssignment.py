@@ -29,10 +29,19 @@ datalist = [154, 11.23, 1+2j, True, 'shaheer ahmed', (3, 2), [4, 5], {"class": '
 for item in datalist:
     print(f"Value: {item} | Type: {type(item).__name__}")
 
+# --- Q4: Numbers between 100-400 where every digit is even---
+evens = []
+for n in range(100, 401):
+    digits = str(n)
+    all_even = True
+    for d in digits:
+        if int(d) % 2 != 0:
+            all_even = False
+            break
+    if all_even:
+        evens.append(str(n))
+print(",".join(evens))
 
-
-
-# --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
 
 # --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
 
