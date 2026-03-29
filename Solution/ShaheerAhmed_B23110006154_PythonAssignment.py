@@ -42,8 +42,14 @@ for n in range(100, 401):
         evens.append(str(n))
 print(",".join(evens))
 
+# --- Q5: Print all divisors of a number ---
+n = int(input("enter number: "))
+divs = []
+for i in range(1, n + 1):
+    if n % i == 0:
+        divs.append(i)
+print(f"Divisors: {divs}")
 
-# --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
 
 # --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
 
