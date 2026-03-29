@@ -24,7 +24,13 @@ for i in range(1, n+1):
     f *= i
 print(f)
 
-# --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
+# --- Q3: Print each item and its type from a list  ---
+datalist = [154, 11.23, 1+2j, True, 'shaheer ahmed', (3, 2), [4, 5], {"class": 'BSCS', "section": 'A'}]
+for item in datalist:
+    print(f"Value: {item} | Type: {type(item).__name__}")
+
+
+
 
 # --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
 
