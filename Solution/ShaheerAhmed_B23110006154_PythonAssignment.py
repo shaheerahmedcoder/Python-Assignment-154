@@ -50,8 +50,16 @@ for i in range(1, n + 1):
         divs.append(i)
 print(f"Divisors: {divs}")
 
-
-# --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
+# --- Q6: Common divisors of two numbers ---
+a = int(input("enter first num: "))
+b = int(input("enter second num: "))
+ 
+common = []
+small = min(a, b)
+for i in range(1, small + 1):
+    if a % i == 0 and b % i == 0:
+        common.append(i)
+print(f"Common divisors: {common}")
 
 # --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
 
