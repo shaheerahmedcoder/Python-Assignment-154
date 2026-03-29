@@ -53,7 +53,6 @@ print(f"Divisors: {divs}")
 # --- Q6: Common divisors of two numbers ---
 a = int(input("enter first num: "))
 b = int(input("enter second num: "))
- 
 common = []
 small = min(a, b)
 for i in range(1, small + 1):
@@ -64,7 +63,6 @@ print(f"Common divisors: {common}")
 # --- Q7: HCF of two numbers ---
 a = int(input("enter first num: "))
 b = int(input("enter second num: "))
- 
 hcf = 1
 small = min(a, b)
 for i in range(1, small+ 1):
@@ -86,7 +84,6 @@ def ev_od(n):
     if n % 2 == 0:
         return "even"
     return "odd"
- 
 print(ev_od(2))   
 print(ev_od(5))   
 
@@ -106,7 +103,6 @@ def sumdig(n):
     for d in str(n):
         t += int(d)
     return t
- 
 print(sumdig(154))   # 10
 
 # --- Q5: Prime number check---
@@ -117,7 +113,6 @@ def prime(n):
         if n % i == 0:
             return False
     return True
- 
 print(prime(154))    
 print(prime(7))   
 
@@ -127,7 +122,6 @@ def fib(n):
     for i in range(n):
         print(a, end=" ")
         a, b = b, a + b
-    
 fib(8)   
 
 # --- Q7:  Counting the vowels prob. ---
@@ -136,8 +130,7 @@ def vow(s):
     for i in s.lower():
         if i in "aeiou":
             count = count + 1
-    return count
- 
+    return count 
 print(vow("shaheer ahmed"))   
 
 # --- Q8: Power without pow() or anyy operator ---
@@ -146,6 +139,5 @@ def pow(baseVal, exp):
     for i in range(exp):
         res = res * baseVal
     return res
- 
 print(pow(5, 2))   
 
