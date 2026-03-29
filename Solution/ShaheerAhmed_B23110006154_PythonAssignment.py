@@ -61,6 +61,15 @@ for i in range(1, small + 1):
         common.append(i)
 print(f"Common divisors: {common}")
 
-# --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
+# --- Q7: HCF of two numbers ---
+a = int(input("enter first num: "))
+b = int(input("enter second num: "))
+ 
+hcf = 1
+small = min(a, b)
+for i in range(1, small+ 1):
+    if a % i == 0 and b % i == 0:
+        hcf = i 
+print(f"HCF = {hcf}")
 
 # --- Q1: Numbers divisible by 7 and multiple of 5, between 1500 and 2700 ---
